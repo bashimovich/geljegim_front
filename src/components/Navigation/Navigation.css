@@ -1,0 +1,168 @@
+.navigation__wrapper {
+    background-color: #094091;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation__logo {
+    padding: 0;
+    margin: 0;
+}
+
+.navigation__logo:hover {
+    cursor: pointer;
+}
+
+.navigation__logo p {
+    font-size: 4.8rem;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation__menu {
+    padding: 0;
+    margin: 0;
+}
+
+.navigation__menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: all ease .4s;
+}
+
+.navigation__menu ul li {
+    margin: 0;
+    padding: 0;
+    margin-left: 1.5rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navigation__menu ul li a {
+    color: #fff;
+    font-size: 1.4rem;
+    margin: 0;
+    text-decoration: none;
+    transition: all ease .4s;
+    padding: 1rem;
+}
+
+.navigation__menu ul li a:hover {
+    background-color: #fff;
+    color: #094091;
+    cursor: pointer;
+}
+
+.navigation__menu ul li a.active {
+    background-color: #fff;
+    color: #094091;
+}
+
+.navigation__menu ul li svg {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 0;
+    text-decoration: none;
+    transition: all ease .4s;
+    padding: 1rem;
+}
+
+.navigation__menu ul li svg:hover {
+    background-color: #fff;
+    color: #094091;
+    cursor: pointer;
+}
+
+.menu__icon {
+    display: none;
+}
+
+@media only screen and (max-width: 1070px) {
+    .navigation__menu ul li {
+        margin-left: 1.4rem;
+        margin-left: 1.4rem;
+    }
+    .navigation__menu ul li a {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .navigation__menu ul li {
+        margin-left: 1rem;
+        margin-left: 1rem;
+    }
+    .navigation__menu ul li a {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .navigation__menu ul li {
+        margin-left: 1.2rem;
+        margin-left: .1rem;
+    }
+    .navigation__menu ul li a {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .navigation__wrapper {
+        position: relative;
+        width: 100%;
+    }
+    .navigation__menu ul {
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 5.1rem;
+        flex-direction: column;
+        z-index: 10;
+        background-color: #094091;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .navigation__menu ul.active {
+        height: 100vh;
+        overflow: auto;
+    }
+    .navigation__menu ul li {
+        width: 100%;
+    }
+    .navigation__menu ul li a {
+        width: 100%;
+    }
+    .menu__icon {
+        display: block;
+    }
+    .menu__icon svg {
+        font-size: 2.4rem;
+        color: #fff;
+    }
+}
+
+.navigation__logo {
+    width: 10%;
+}
+
+.navigation__logo img {
+    width: 100%;
+}

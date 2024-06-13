@@ -1,0 +1,23 @@
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+
+}
+.info__card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    margin-right: 17px;
+}
+.info__card p, svg{
+    /* color: #094091; */
+    color: #919094;
+    font-size: 14px;
+    padding: 3px 0;
+    margin: 0;
+}
